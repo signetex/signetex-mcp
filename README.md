@@ -168,3 +168,7 @@ The Worker reports version `1.7.41` in `serverInfo`. This repository does not ch
 Individual entries are released under CC BY-NC 4.0 with the attribution `Source: Signetex, signetex.ch, <entry ID>`. The register as a whole is not released under a Creative Commons licence; please read the [terms of use](https://signetex.ch/en/terms.html) before any bulk or commercial use.
 
 Operator: Hotel Phoenix AG (legal entity only, not a hotel business).
+
+## License
+
+The server code in this repository is released under the MIT License (see `LICENSE`). Register entries and data served by the MCP server are licensed separately under CC BY-NC 4.0, as stated on https://signetex.ch.
