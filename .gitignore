@@ -1,0 +1,21 @@
+# Local and secret material — never commit these
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+*.hex
+*.p12
+*.pfx
+token.json
+credentials.json
+wrangler.toml.local
+
+# Tooling
+node_modules/
+.wrangler/
+.mf/
+dist/
+build/
+.DS_Store
+*.log

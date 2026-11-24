@@ -1,0 +1,26 @@
+# Binding layout for the published Signetex MCP worker at https://mcp.signetex.ch/mcp.
+# This file is documentation for the live Worker. Cloudflare account identifiers
+# are omitted on purpose.
+name = "signetex-mcp"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+DAILY_CAP_LIMIT = "250000"
+
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
+[[durable_objects.bindings]]
+name = "DAILY_CAP"
+class_name = "DailyCap"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DailyCap"]
+
+[[analytics_engine_datasets]]
+binding = "USAGE"
+dataset = "signetex_mcp_usage"

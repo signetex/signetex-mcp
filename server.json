@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ch.signetex/register",
+  "title": "Signetex",
+  "description": "Public register of claims and forecasts with E0-E4 evidence grades and outcomes; no verdicts.",
+  "version": "1.7.41",
+  "websiteUrl": "https://signetex.ch",
+  "icons": [
+    {
+      "src": "https://signetex.ch/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.signetex.ch/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/signetex/signetex-mcp",
+    "source": "github",
+    "id": "1469773411"
+  }
+}
